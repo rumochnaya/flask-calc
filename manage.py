@@ -12,7 +12,9 @@ from flask_calc import app
 
 
 manager = Manager(app)
-manager.add_command("runserver", Server(use_debugger=True))
+manager.add_command("debug", Server(use_debugger=True))
+
+manager.add_command("runserver", Server(host="0.0.0.0"))
 
 
 @manager.command
