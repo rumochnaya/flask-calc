@@ -32,3 +32,4 @@ class Calc(restful.Resource):
 
 
 api.add_resource(Calc, '/<any("", "sum"):action>', methods=['GET', 'POST'])
+ 
